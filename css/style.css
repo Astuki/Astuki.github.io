@@ -50,17 +50,20 @@ img.logo{
 p.Websitename{
     font-size: 50px;
     color: white;
+    align-self: center;
 }
 a.page2nd{
     align-self: center;
     font-size: 50px;
     color: white;
     text-decoration: none;
+    position: relative;
+    bottom: 5px;
 }
 a.page2nd:hover{
     color: rgb(0, 38, 255);
     text-decoration: underline;
-    transform: scale(1.05);
+    transform: scale(1.1);
 }
 span.bold{
     font-family: "PoppinsBold", sans-serif;
@@ -86,10 +89,18 @@ p.text-one{
     background-color: rgba(128, 128, 128, 0.055);
     padding-left: 5%;
 }
+p.text-one:hover{
+    background-color: rgba(0, 0, 0, 0.404);
+    transform: scale(1.1);
+}
 p.text-two{
     font-size: 35px;
     color: rgb(255, 123, 123);
     padding-left: 5%;
+}
+p.text-two:hover{
+    background-color: rgba(97, 0, 0, 0.404);
+    transform: scale(1.1);
 }
 div.section-wrapper{
     width: 600px;
@@ -106,9 +117,9 @@ button.btn-primary{
     margin-left: 5%;
 }
 button.btn-primary:hover{
-    transform: scale(1.05);
+    transform: scale(1.1);
     background-color: rgb(0, 0, 0);
-    border: 2px white solid;
+    border: 1px white solid;
 }
 
 section.donateVolunteerSponsor{
@@ -166,4 +177,180 @@ footer{
     justify-content: center;
 }
 
+}
+
+
+
+
+@media (max-width: 600px) {
+    @font-face {
+        font-family: "PoppinsEL";
+        src: url(../fonts/Poppins-ExtraLight.otf);
+        font-family: "PoppinsBold";
+        src: url(../fonts/Poppins-SemiBold.otf);
+    }
+    
+    * {
+        margin: 0;
+        padding: 0;
+        font: inherit;
+    }
+    body {
+        min-height: 100vh;
+    }
+    
+    div.website-part-one{
+        background-image: url("../Images/imagefond.jpg");
+        background-size: auto;
+    }
+    
+    div.header-wrapper{
+        display: flex;
+        align-items: center;
+        align-content: flex-start;
+        justify-content: center;
+        margin-bottom: 10%;
+    }
+    header{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        width: 100%;
+        border-bottom: 3px rgb(94, 94, 94) solid;
+    }
+    nav.cliquable{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        width: 100%;
+        font-family: "PoppinsEl", sans-serif;
+    }
+    img.logo{
+        align-self: center;
+        height: 75px;
+        margin-top: 10px;
+    }
+    p.Websitename{
+        font-size: 50px;
+        color: white;
+        align-self: center;
+    }
+    a.page2nd{
+        align-self: center;
+        font-size: 50px;
+        color: white;
+        text-decoration: none;
+    }
+    a.page2nd:hover{
+        color: rgb(0, 38, 255);
+        text-decoration: underline;
+        transform: scale(1.1);
+    }
+    span.bold{
+        font-family: "PoppinsBold", sans-serif;
+        text-decoration: underline;
+    }
+    
+    
+    section.part-one{
+    display: flex;
+    flex-flow: row wrap;
+    width: 90%;
+    justify-content: flex-start;
+    align-items: center;
+    }
+    
+    p{
+        color: white;
+    }
+    p.text-one{
+        font-size: 45px;
+        color: rgb(255, 255, 255);
+        font-weight: 600;
+        background-color: rgba(128, 128, 128, 0.055);
+        padding-left: 20%;
+        padding-bottom: 15%;
+    }
+  
+    p.text-two{
+        font-size: 35px;
+        color: rgb(255, 123, 123);
+        padding-left: 20%;
+        padding-bottom: 15%;
+    }
+    
+    div.section-wrapper{
+        width: 600px;
+        padding-bottom: 10%;  
+    }
+    
+    button.btn-primary{
+        height: fit-content;
+        font-size: 25px;
+        background-color: gold;
+        color: black;
+        border: 1px gold solid;
+        margin-bottom: 5%;
+        margin-left: 20%;
+    }
+    button.btn-primary:hover{
+        transform: scale(1.1);
+        background-color: rgb(0, 0, 0);
+        border: 1px white solid;
+    }
+    
+    section.donateVolunteerSponsor{
+        background-color: rgba(214, 214, 214, 0.4);
+        padding-top: 5%;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        padding-bottom: 5%;
+    }
+    
+    li, ul{
+        list-style: none;
+        padding-right: 5%;
+    }
+    
+    article.donate{
+        max-width: 350px;
+        background-color: rgba(1, 255, 1, 0.452);
+        padding-top: 2%;
+        display: flex;
+        align-items: center;
+        flex-flow: column;
+    }
+    img.donateGreen{
+        width: 50px;
+    }
+    
+    article.volunteer{
+        max-width: 350px;
+        background-color: rgb(56, 56, 56);
+        padding-top: 2%;
+        display: flex;
+        align-items: center;
+        flex-flow: column;
+    }
+    ul.volunteer{
+        color: white;
+    }
+    
+    article.sponsor{
+        max-width: 350px;
+        background-color: rgba(114, 112, 0, 0.452);
+        padding-top: 2%;
+        display: flex;
+        align-items: center;
+        flex-flow: column;
+    }
+    
+    footer{
+        background-color: black;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }

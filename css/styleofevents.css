@@ -1,0 +1,126 @@
+@media (min-width: 600px) {
+
+@font-face {
+    font-family: "PoppinsEL";
+    src: url(../fonts/Poppins-ExtraLight.otf);
+    font-family: "PoppinsBold";
+    src: url(../fonts/Poppins-SemiBold.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+body {
+    min-height: 100vh;
+}
+
+div.website-part-one{
+    background-image: url("../Images/imagefond.jpg");
+    background-size: cover;
+}
+
+div.header-wrapper{
+    display: flex;
+    align-items: center;
+    align-content: flex-start;
+    justify-content: center;
+    margin-bottom: 10%;
+}
+header{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    width: 75%;
+    border-bottom: 3px gray solid;
+}
+nav.cliquable{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    width: 100%;
+    font-family: "PoppinsEl", sans-serif;
+}
+img.logo{
+    align-self: center;
+    height: 75px;
+    margin-top: 10px;
+}
+p.Websitename{
+    font-size: 50px;
+    color: white;
+    align-self: center;
+}
+a.page1st{
+    align-self: center;
+    font-size: 50px;
+    text-decoration: none;
+}
+a.page1st:hover{
+    transform: scale(1.2);
+}
+
+span.bold{
+    font-family: "PoppinsBold", sans-serif;
+    text-decoration: underline;
+}
+
+h1{
+    padding-left: 5%;
+    font-size: 35px;
+    color: white;
+    padding-bottom: 5%;
+}
+
+section.maps{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 1fr);
+    grid-template-rows: repeat(auto-fit, 1fr);
+    grid-column-gap: 75px;
+    grid-row-gap: 50px;
+    padding-bottom: 10%;
+    margin: 0px 5% 0px 5%;
+}
+section.maps > div{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    color: white;
+    font-size: 35px;
+    border: 3px rgb(110, 110, 110) solid;
+}
+section.maps > div:hover{
+    background-color: rgba(0, 0, 0, 0.450);
+    color: gold;
+    text-decoration: underline;
+    transform: scale(1.1);
+}
+
+p.texteMap{
+    font-size: 35px;
+    padding-left: 1%;
+    height: auto;
+    width: auto;
+}
+
+p.country1{
+padding-right: 5%;
+}
+p.country2{
+padding-right: 7%;
+}
+p.country3{
+padding-right: 6%;
+}
+footer{
+    background-color: black;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+P.legal{
+    color: white;
+}
+}
