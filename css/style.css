@@ -18,7 +18,7 @@ body {
 
 div.website-part-one{
     background-image: url("../Images/imagefond.jpg");
-    background-size: cover;
+    background-size: auto;
 }
 
 div.header-wrapper{
@@ -32,26 +32,28 @@ header{
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
-    width: 75%;
+    width: 100%;
     border-bottom: 3px rgb(94, 94, 94) solid;
 }
 nav.cliquable{
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     width: 100%;
     font-family: "PoppinsEl", sans-serif;
 }
 img.logo{
+    align-self: center;
     height: 75px;
     margin-top: 10px;
 }
 p.Websitename{
-    font-size: 58px;
+    font-size: 50px;
     color: white;
 }
 a.page2nd{
-    font-size: 58px;
+    align-self: center;
+    font-size: 50px;
     color: white;
     text-decoration: none;
 }
@@ -62,16 +64,16 @@ a.page2nd:hover{
 }
 span.bold{
     font-family: "PoppinsBold", sans-serif;
+    text-decoration: underline;
 }
 
 
 section.part-one{
 display: flex;
 flex-flow: row wrap;
-width: min-content;
+width: fit-content;
 justify-content: flex-start;
 align-items: center;
-margin-left: 10%;
 }
 
 p{
@@ -82,16 +84,19 @@ p.text-one{
     color: rgb(255, 255, 255);
     font-weight: 600;
     background-color: rgba(128, 128, 128, 0.055);
+    padding-left: 5%;
 }
 p.text-two{
     font-size: 35px;
     color: rgb(255, 123, 123);
     text-decoration: underline;
-    background-color: rgba(0, 0, 0, 0.486);
+    padding-left: 5%;
 }
 div.section-wrapper{
     width: 600px;
+    padding-bottom: 10%;  
 }
+
 button.btn-primary{
     height: fit-content;
     font-size: 25px;
@@ -99,6 +104,7 @@ button.btn-primary{
     color: black;
     border: 1px gold solid;
     margin-bottom: 5%;
+    margin-left: 5%;
 }
 button.btn-primary:hover{
     transform: scale(1.05);
