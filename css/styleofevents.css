@@ -32,6 +32,7 @@ header{
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
+    background-color: rgba(128, 128, 128, 0.123);
     width: 75%;
     border-bottom: 3px gray solid;
 }
@@ -69,7 +70,7 @@ span.bold{
 h1{
     padding-left: 5%;
     font-size: 35px;
-    color: white;
+    color: green;
     padding-bottom: 5%;
 }
 
@@ -89,6 +90,7 @@ section.maps > div{
     color: white;
     font-size: 35px;
     border: 3px rgb(110, 110, 110) solid;
+    background-color: rgba(0, 0, 0, 0.150);
 }
 section.maps > div:hover{
     background-color: rgba(0, 0, 0, 0.450);
@@ -102,16 +104,26 @@ p.texteMap{
     padding-left: 1%;
     height: auto;
     width: auto;
+
 }
 
 p.country1{
 padding-right: 5%;
+color: white;
+
 }
 p.country2{
 padding-right: 7%;
+color: white;
+
 }
 p.country3{
 padding-right: 6%;
+color: white;
+
+}
+p.country4{
+color: white;
 }
 footer{
     background-color: black;
