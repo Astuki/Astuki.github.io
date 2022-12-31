@@ -1,4 +1,3 @@
-@media (min-width: 600px) {
 
 @font-face {
     font-family: "PoppinsEL";
@@ -74,6 +73,7 @@ h1{
     padding-bottom: 5%;
 }
 
+
 section.maps{
     display: grid;
     grid-template-columns: repeat(auto-fit, 1fr);
@@ -83,6 +83,7 @@ section.maps{
     padding-bottom: 10%;
     margin: 0px 5% 0px 5%;
 }
+
 section.maps > div{
     display: flex;
     justify-items: center;
@@ -92,11 +93,11 @@ section.maps > div{
     border: 3px rgb(110, 110, 110) solid;
     background-color: rgba(0, 0, 0, 0.150);
 }
+
 section.maps > div:hover{
     background-color: rgba(0, 0, 0, 0.450);
     color: gold;
     text-decoration: underline;
-    transform: scale(1.1);
 }
 
 p.texteMap{
@@ -104,7 +105,6 @@ p.texteMap{
     padding-left: 1%;
     height: auto;
     width: auto;
-
 }
 
 p.country1{
@@ -125,6 +125,7 @@ color: white;
 p.country4{
 color: white;
 }
+
 footer{
     background-color: black;
     height: 100px;
@@ -132,7 +133,22 @@ footer{
     align-items: center;
     justify-content: center;
 }
+
 P.legal{
     color: white;
 }
+
+@media (max-width: 800px) {
+div.mapOne, div.mapTwo, div.mapThree, div.mapFour{
+    flex-flow: column wrap;
+}
+
+}
+
+@media (min-width: 800px) {
+
+section.maps > div:hover{
+    transform: scale(1.1);
+}
+
 }

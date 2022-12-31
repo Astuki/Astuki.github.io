@@ -62,9 +62,6 @@ p.text-two{
     padding-bottom: 5%;
 }
 
-
-@media (min-width: 600px) {
-
 div.website-part-one{
     background-image: url("../Images/imagefond.jpg");
     background-size: auto;
@@ -75,16 +72,16 @@ div.header-wrapper{
     align-items: center;
     align-content: flex-start;
     justify-content: center;
-    margin-bottom: 5%;
+    margin-bottom: 10%;
 }
+
 header{
     display: flex;
-    flex-flow: row nowrap;
     justify-content: center;
-    background-color: rgba(128, 128, 128, 0.123);
-    width: 75%;
+    width: 100%;
     border-bottom: 3px rgb(94, 94, 94) solid;
 }
+
 nav.cliquable{
     display: flex;
     flex-flow: row nowrap;
@@ -92,31 +89,41 @@ nav.cliquable{
     width: 100%;
     font-family: "PoppinsEl", sans-serif;
 }
-img.logo{
-    align-self: center;
-    height: 75px;
-}
+
 p.Websitename{
     font-size: 50px;
     color: white;
+    
 }
 
-
 section.part-one{
-display: flex;
-flex-flow: row wrap;
-width: fit-content;
-justify-content: flex-start;
-align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    width: fit-content;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 p{
     color: white;
 }
 
-div.section-wrapper{
-    width: 600px;
-    padding-bottom: 10%;  
+li, ul{
+    list-style: none;
+    padding-right: 5%;
+}
+
+ul.volunteer{
+    color: white;
+}
+
+img.donateGreen{
+    width: 50px;
+}
+
+p.text-three{
+    color: black;
+    font-size: 28px;
 }
 
 button.btn-primary{
@@ -125,8 +132,6 @@ button.btn-primary{
     background-color: gold;
     color: black;
     border: 1px gold solid;
-    margin-bottom: 5%;
-    margin-left: 15%;
 }
 button.btn-primary:hover{
     transform: scale(1.1);
@@ -141,12 +146,7 @@ section.donateVolunteerSponsor{
     display: flex;
     justify-content: space-evenly;
     padding-bottom: 5%;
-}
-
-li, ul{
-    list-style: none;
-    padding-right: 5%;
-}
+} 
 
 article.donate{
     max-width: 350px;
@@ -155,10 +155,7 @@ article.donate{
     display: flex;
     align-items: center;
     flex-flow: column;
-}
-img.donateGreen{
-    width: 50px;
-}
+}  
 
 article.volunteer{
     max-width: 350px;
@@ -167,9 +164,6 @@ article.volunteer{
     display: flex;
     align-items: center;
     flex-flow: column;
-}
-ul.volunteer{
-    color: white;
 }
 
 article.sponsor{
@@ -181,10 +175,6 @@ article.sponsor{
     flex-flow: column;
 }
 
-p.text-three{
-  color: black;
-  font-size: 28px;
-}
 footer{
     background-color: black;
     height: 100px;
@@ -193,6 +183,35 @@ footer{
     justify-content: center;
 }
 
+
+
+
+
+@media (min-width: 600px) {
+
+div.header-wrapper{
+    margin-bottom: 5%;
+}
+
+header{
+    width: 75%;
+}
+
+img.logo{
+    align-self: center;
+    height: 75px;
+}
+
+div.section-wrapper{
+    width: 600px;
+    padding-bottom: 10%;  
+}
+
+button.btn-primary{
+    margin-bottom: 5%;
+    margin-left: 15%;
+}
+
 }
 
 
@@ -202,63 +221,31 @@ footer{
 
 
 
-@media (max-width: 600px) {
-    
-   
-div.website-part-one{
-    background-image: url("../Images/imagefond.jpg");
-    background-size: auto;
-}
+@media (max-width: 600px) {    
     
 div.header-wrapper{
-    display: flex;
-    align-items: center;
-    align-content: flex-start;
-    justify-content: center;
     margin-bottom: 10%;
 }
-header{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    border-bottom: 3px rgb(94, 94, 94) solid;
-}
+
 nav.cliquable{
-    display: flex;
     flex-flow: column wrap;
-    justify-content: space-evenly;
-    width: 100%;
-    font-family: "PoppinsEl", sans-serif;
 }
+
 img.logo{
     align-self: center;
     height: 75px;
     margin-top: 10px;
 }
 p.Websitename{
-    font-size: 50px;
-    color: white;
     align-self: center;
-}
-
-span.bold{
-    font-family: "PoppinsBold", sans-serif;
-    text-decoration: underline;
-}
-    
+} 
     
 section.part-one{
-    display: flex;
-    flex-flow: row wrap;
     width: 90%;
     justify-content: flex-start;
     align-items: center;
 }
     
-p{
-    color: white;
-}
-
 p.text-one{
     padding-left: 20%;
     padding-bottom: 15%;
@@ -275,73 +262,12 @@ div.section-wrapper{
 }
     
 button.btn-primary{
-    height: fit-content;
-    font-size: 25px;
-    background-color: gold;
-    color: black;
-    border: 1px gold solid;
     margin-bottom: 5%;
     margin-left: 20%;
 }
-button.btn-primary:hover{
-    transform: scale(1.1);
-    background-color: rgb(0, 0, 0);
-    border: 1px white solid;
-}
     
 section.donateVolunteerSponsor{
-    background-color: rgba(214, 214, 214, 0.4);
-    padding-top: 5%;
-    width: 100%;
-    display: flex;
     flex-flow: column wrap;
     align-content: center;
-    padding-bottom: 5%;
-}
-    
-li, ul{
-    list-style: none;
-    padding-right: 5%;
-}
-    
-article.donate{
-    max-width: 350px;
-    background-color: rgba(1, 255, 1, 0.452);
-    padding-top: 2%;
-    display: flex;
-    align-items: center;
-    flex-flow: column;
-}
-img.donateGreen{
-    width: 50px;
-}
-    
-article.volunteer{
-    max-width: 350px;
-    background-color: rgb(56, 56, 56);
-    padding-top: 2%;
-    display: flex;
-    align-items: center;
-    flex-flow: column;
-}
-ul.volunteer{
-    color: white;
-}
-    
-article.sponsor{
-    max-width: 350px;
-    background-color: rgba(114, 112, 0, 0.452);
-    padding-top: 2%;
-    display: flex;
-    align-items: center;
-    flex-flow: column;
-}
-    
-footer{
-    background-color: black;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+}  
 }
